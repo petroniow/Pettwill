@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PETTWILL SUPORTE TECNOLÓGICO – Informática em domicílio | Recife</title>
+  <meta name="description" content="Suporte técnico de informática em domicílio em Recife. Formatação, remoção de vírus, otimização, backup e instalação. Atendimento rápido e confiável.">
+  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:title" content="PETTWILL SUPORTE TECNOLÓGICO – Informática em domicílio | Recife">
+  <meta property="og:description" content="Computador lento ou travando? Vamos até você em Recife. Agende pelo WhatsApp!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="/compartilhar-pettwill.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1220; --card:#121a2b; --text:#e6eefc; --muted:#b3c4e6; --brand:#0ea5e9; --brand-2:#38bdf8; --accent:#22c55e; --alert:#f43f5e;
+      --shadow:0 10px 30px rgba(14,165,233,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .btn{display:inline-flex;align-items:center;gap:.6rem;padding:.9rem 1.2rem;border-radius:14px;font-weight:700;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#001018;box-shadow:var(--shadow);transition:transform .12s ease, box-shadow .12s ease}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(14,165,233,.35)}
+    .btn.secondary{background:#1f2a44;color:var(--text);box-shadow:none;border:1px solid #334165}
+    header{position:sticky;top:0;z-index:50;background:rgba(11,18,32,.7);backdrop-filter:blur(10px);border-bottom:1px solid #162036}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;letter-spacing:.4px}
+    .brand .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:grid;place-items:center;color:#001018;font-weight:900}
+    .menu{display:flex;gap:1rem}
+    .menu a{padding:.6rem .8rem;border-radius:10px;color:var(--muted)}
+    .menu a:hover{background:#162036;color:var(--text)}
+    .hero{padding:64px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
+    h1{font-size:clamp(28px,3.8vw,46px);line-height:1.15;margin:0 0 14px}
+    .lead{font-size:clamp(16px,2.2vw,20px);color:var(--muted);margin-bottom:22px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 0}
+    .badge{background:#0f1729;border:1px solid #1d2a45;color:#cfe0ff;padding:.4rem .6rem;border-radius:999px;font-size:13px}
+    .card{background:var(--card);border:1px solid #162036;border-radius:18px;padding:20px;box-shadow:0 8px 18px rgba(2,6,23,.35)}
+    .grid{display:grid;gap:18px}
+    .services{padding:28px 0 10px}
+    .services .grid{grid-template-columns:repeat(4,1fr)}
+    .service h3{margin:10px 0 6px}
+    .service p{color:var(--muted);font-size:15px}
+    .cta{padding:40px 0}
+    .cta .wrap{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+    .testi{padding:24px 0}
+    .testi .grid{grid-template-columns:repeat(3,1fr)}
+    .contact{padding:34px 0 60px}
+    form{display:grid;gap:12px}
+    input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #334165;background:#0f1729;color:var(--text);font:inherit}
+    textarea{min-height:120px;resize:vertical}
+    .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    footer{background:#0a101d;border-top:1px solid #162036;padding:24px 0;color:#a9b9da}
+    .foot{display:grid;gap:16px;grid-template-columns:1.3fr 1fr 1fr}
+    .chip{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .6rem;border:1px solid #1e2a45;border-radius:999px;color:#cfe0ff;font-size:13px}
+    .tag{display:inline-block;padding:.14rem .5rem;background:#0f1729;border:1px solid #1e2a45;border-radius:8px;font-size:12px;color:#cfe0ff}
+    .map{aspect-ratio:16/9;border:0;width:100%;border-radius:16px;filter:grayscale(20%) contrast(98%)}
+
+    /* Responsive */
+    @media (max-width:960px){
+      .hero-grid{grid-template-columns:1fr}
+      .services .grid{grid-template-columns:1fr 1fr}
+      .testi .grid{grid-template-columns:1fr}
+      .foot{grid-template-columns:1fr}
+      .cols{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PETTWILL SUPORTE TECNOLÓGICO",
+    "image": "/compartilhar-pettwill.jpg",
+    "url": "https://www.pettwill.com.br",
+    "telephone": "+55 81 9 9999-9999",
+    "email": "contato@pettwill.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Recife e Região Metropolitana",
+    "openingHours": "Mo-Sa 08:00-19:00",
+    "priceRange": "R$"
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Página inicial PETTWILL SUPORTE TECNOLÓGICO">
+        <span class="logo" aria-hidden="true">PW</span>
+        <span>PETTWILL <span style="color:var(--brand)">SUPORTE TECNOLÓGICO</span></span>
+      </a>
+      <nav class="menu" aria-label="menu principal">
+        <a href="#servicos">Serviços</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+        <a class="btn" href="https://wa.me/5581999999999?text=Olá%2C%20quero%20agendar%20um%20atendimento%20domiciliar%20em%20Recife" target="_blank" rel="noopener">📲 Agende no WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <h1>Suporte técnico de informática em Recife, <span style="color:var(--brand)">no conforto da sua casa</span>.</h1>
+          <p class="lead">Computador lento, travando ou com vírus? Nós resolvemos <strong>rápido e com segurança</strong>. Atendimento domiciliar confiável em toda a cidade.</p>
+          <div class="badges">
+            <span class="badge">Atendimento no mesmo dia*</span>
+            <span class="badge">Mais de 500 computadores salvos</span>
+            <span class="badge">Garantia de serviço</span>
+          </div>
+          <div style="margin:18px 0 0; display:flex; gap:12px; flex-wrap:wrap">
+            <a class="btn" href="https://wa.me/5581999999999?text=Olá%2C%20quero%20agendar%20um%20atendimento%20domiciliar%20em%20Recife" target="_blank" rel="noopener">⚡ Agendar atendimento</a>
+            <a class="btn secondary" href="#servicos">Ver serviços</a>
+          </div>
+          <p style="font-size:12px;color:#9bb0d9;margin-top:8px">*sujeito à disponibilidade de agenda.</p>
+        </div>
+        <div>
+          <div class="card" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="Técnico trabalhando em notebook" style="border-radius:14px">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="services">
+      <h2 style="margin:0 0 10px">Serviços</h2>
+      <p class="lead" style="margin-top:0">Tudo para deixar seu PC/notebook <strong>rápido, seguro e pronto para o trabalho</strong>.</p>
+      <div class="grid">
+        <div class="card service">
+          <span class="chip">🔧 Formatação & Otimização</span>
+          <h3>Seu computador como novo</h3>
+          <p>Formatação, atualização de drivers e limpeza de sistema para máximo desempenho.</p>
+        </div>
+        <div class="card service">
+          <span class="chip">🦠 Remoção de Vírus</span>
+          <h3>Segurança e proteção</h3>
+          <p>Eliminação de malwares e configuração de antivírus para proteger seus dados.</p>
+        </div>
+        <div class="card service">
+          <span class="chip">📦 Instalação de Programas</span>
+          <h3>Pronto para usar</h3>
+          <p>Instalamos e configuramos os softwares que você precisa, sem complicação.</p>
+        </div>
+        <div class="card service">
+          <span class="chip">💽 Backup & Recuperação</span>
+          <h3>Seus arquivos a salvo</h3>
+          <p>Backup preventivo e tentativa de recuperação de dados em casos de falha.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="card">
+          <div class="wrap">
+            <div style="flex:1;min-width:260px">
+              <h3 style="margin:0 0 6px">PC lento? Não perca o dia.</h3>
+              <p style="margin:0;color:var(--muted)">Agende uma visita técnica domiciliar em qualquer bairro do Recife. Atendimento rápido e sem dor de cabeça.</p>
+            </div>
+            <a class="btn" href="https://wa.me/5581999999999?text=Olá%2C%20preciso%20de%20suporte%20técnico%20em%20domicílio%20em%20Recife" target="_blank" rel="noopener">📲 Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="testi">
+      <h2 style="margin:0 0 10px">Depoimentos</h2>
+      <p class="lead" style="margin-top:0">Prova social de quem já resolveu o problema com a PETTWILL.</p>
+      <div class="grid">
+        <figure class="card">
+          <blockquote style="margin:0 0 10px">“Meu notebook estava impossível de usar, mas a PETTWILL resolveu em poucas horas. Atendimento super atencioso!”</blockquote>
+          <figcaption style="color:#9bb0d9">— João S., Boa Viagem</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote style="margin:0 0 10px">“Ótimo serviço, meu PC ficou como novo. O melhor é que fizeram tudo em casa, sem dor de cabeça.”</blockquote>
+          <figcaption style="color:#9bb0d9">— Maria L., Casa Forte</figcaption>
+        </figure>
+        <figure class="card">
+          <blockquote style="margin:0 0 10px">“Rápidos e profissionais. Voltarei a chamar sempre que precisar.”</blockquote>
+          <figcaption style="color:#9bb0d9">— Pedro A., Espinheiro</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-label="áreas de atendimento" class="card" style="margin:10px 0 34px">
+      <div class="container" style="padding:0">
+        <div class="cols">
+          <div>
+            <h2 style="margin:0 0 10px">Atendimento em Recife</h2>
+            <p class="lead" style="margin-top:0">Atendemos em domicílio nos principais bairros: Boa Viagem, Casa Forte, Espinheiro, Graças, Pina, Afogados, Madalena e região metropolitana (consultar disponibilidade).</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px">
+              <span class="tag">Atendimento no mesmo dia*</span>
+              <span class="tag">Pagamento no cartão</span>
+              <span class="tag">Nota e garantia</span>
+            </div>
+          </div>
+          <div>
+            <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7908.246388375801!2d-34.903!3d-8.052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a2b3c3e1f1%3A0x0000000000000000!2sRecife%2C%20PE!5e0!3m2!1spt-BR!2sbr!4v1710000000000"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2 style="margin:0 0 10px">Contato</h2>
+      <p class="lead" style="margin-top:0">Fale com a PETTWILL e agende sua visita técnica.</p>
+      <div class="cols">
+        <div class="card">
+          <form action="https://formsubmit.co/contato@pettwill.com.br" method="POST">
+            <input type="hidden" name="_subject" value="Nova solicitação de atendimento – Site PETTWILL">
+            <input type="hidden" name="_captcha" value="false">
+            <label>
+              <span>Nome</span>
+              <input required name="nome" placeholder="Seu nome" />
+            </label>
+            <label>
+              <span>WhatsApp</span>
+              <input required name="whatsapp" placeholder="(81) 9 9999-9999" />
+            </label>
+            <label>
+              <span>Bairro</span>
+              <input required name="bairro" placeholder="Ex.: Boa Viagem" />
+            </label>
+            <label>
+              <span>Mensagem</span>
+              <textarea name="mensagem" placeholder="Descreva o problema do seu computador"></textarea>
+            </label>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <button class="btn" type="submit">Enviar pedido</button>
+              <a class="btn secondary" href="mailto:contato@pettwill.com.br">Enviar e‑mail</a>
+            </div>
+          </form>
+        </div>
+        <div>
+          <div class="card" style="height:100%">
+            <h3 style="margin-top:0">Canais de atendimento</h3>
+            <ul style="list-style:none;padding:0;margin:0;color:var(--muted)">
+              <li>📞 <strong>Telefone:</strong> (81) 9 9999‑9999</li>
+              <li>💬 <strong>WhatsApp:</strong> <a href="https://wa.me/5581999999999" target="_blank" rel="noopener">(81) 9 9999‑9999</a></li>
+              <li>✉️ <strong>E‑mail:</strong> <a href="mailto:contato@pettwill.com.br">contato@pettwill.com.br</a></li>
+              <li>🕘 <strong>Horário:</strong> Seg à Sáb, 08h–19h</li>
+              <li>📍 <strong>Cidade:</strong> Recife – PE</li>
+            </ul>
+            <p style="font-size:12px;color:#9bb0d9;margin-top:14px">Responderemos o mais rápido possível. Em casos urgentes, chame direto no WhatsApp.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div>
+        <div class="brand" style="margin-bottom:8px">
+          <span class="logo" aria-hidden="true">PW</span>
+          <strong>PETTWILL SUPORTE TECNOLÓGICO</strong>
+        </div>
+        <p style="margin:0">Informática em domicílio em Recife. Seu computador <em>rápido e seguro</em> sem sair de casa.</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 6px;color:#d3e2ff">Links</h4>
+        <ul style="list-style:none;padding:0;margin:0;display:grid;gap:6px">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 style="margin:0 0 6px;color:#d3e2ff">Agendamento</h4>
+        <p style="margin:0 0 8px">Fale agora pelo WhatsApp e garanta atendimento ainda hoje*</p>
+        <a class="btn" href="https://wa.me/5581999999999?text=Olá%2C%20preciso%20de%20suporte%20de%20informática%20em%20domicílio" target="_blank" rel="noopener">📲 Agendar no WhatsApp</a>
+        <p style="font-size:12px;color:#9bb0d9;margin-top:8px">*sujeito à disponibilidade</p>
+      </div>
+    </div>
+    <div class="container" style="border-top:1px solid #162036;margin-top:16px;padding-top:14px;font-size:13px;color:#8ea6d1">
+      © <span id="ano"></span> PETTWILL SUPORTE TECNOLÓGICO – Recife, PE. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script>
+    // Atualiza o ano automaticamente
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
